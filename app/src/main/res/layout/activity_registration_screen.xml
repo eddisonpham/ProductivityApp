@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_indigo"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".RegistrationScreen">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@color/dark_purple"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Register An Account"
+        android:textColor="@color/light_purple"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_purple"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="Email"
+            android:textColor="@color/purple"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/regEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:hint="Enter email address..."
+            android:inputType="textEmailAddress"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:paddingTop="5dp"
+            android:text="Full Name"
+            android:textColor="@color/purple"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/regFull"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:hint="Enter full name..."
+            android:inputType="text"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:paddingTop="5dp"
+            android:text="Phone Number"
+            android:textColor="@color/purple"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/regPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:hint="Enter phone number..."
+            android:inputType="number"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:paddingTop="5dp"
+            android:text="Password"
+            android:textColor="@color/purple"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/regPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:hint="Enter password..."
+            android:inputType="textPassword"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:paddingTop="5dp"
+            android:text="Confirm Password"
+            android:textColor="@color/purple"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/regConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:hint="Confirm password..."
+            android:inputType="textPassword"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12sp"
+        android:backgroundTint="@color/dark_purple"
+        android:text="Register Account"
+        android:textColor="@color/light_purple"
+        android:textSize="24sp" />
+
+</LinearLayout>

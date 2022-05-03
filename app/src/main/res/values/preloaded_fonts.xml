@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/bigshot_one</item>
+        <item>@font/francois_one</item>
+        <item>@font/krona_one</item>
+        <item>@font/nunito_sans_extralight</item>
+    </array>
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LBLayout"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:layout_marginBottom="10dp"
+    android:background="@color/dark_purple"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/LBnumber"
+        android:layout_width="125dp"
+        android:layout_height="140dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/dark_indigo"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="#1"
+        android:textColor="@color/purple"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/LBName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/purple"
+            android:padding="5dp"
+            android:textColor="@color/dark_purple"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/LBLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/light_purple"
+            android:padding="5dp"
+            android:text="TextView"
+            android:textColor="@color/purple"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/LBTasksCompleted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/light_purple"
+            android:padding="5dp"
+            android:text="TextView"
+            android:textColor="@color/purple"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

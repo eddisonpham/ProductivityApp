@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_indigo"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".ToDoList">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_purple"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="TODO LIST"
+        android:textColor="@color/light_purple"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addNewTask"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/openActionButtons"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="right"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="11dp"
+        android:clickable="true"
+        android:enabled="false"
+        android:foregroundTint="@color/dark_purple"
+        android:visibility="invisible"
+        app:backgroundTint="@color/light_purple"
+        app:maxImageSize="40dp"
+        app:srcCompat="@drawable/ic_baseline_add_box_24" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/openActionButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="right"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="1dp"
+        android:clickable="true"
+        android:foregroundTint="@color/dark_purple"
+        app:backgroundTint="@color/light_purple"
+        app:maxImageSize="50dp"
+        app:srcCompat="@drawable/ic_baseline_arrow_drop_down_24" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/selectAll"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/selectReminder"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="right"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="11dp"
+        android:clickable="true"
+        android:enabled="false"
+        android:foregroundTint="@color/dark_purple"
+        android:visibility="invisible"
+        app:backgroundTint="@color/light_purple"
+        app:maxImageSize="40dp"
+        app:srcCompat="@drawable/ic_baseline_select_all_24" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/selectStudy"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/selectTasks"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="right"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="11dp"
+        android:clickable="true"
+        android:enabled="false"
+        android:foregroundTint="@color/dark_purple"
+        android:visibility="invisible"
+        app:backgroundTint="@color/light_purple"
+        app:maxImageSize="40dp"
+        app:srcCompat="@drawable/study" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/selectTasks"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/addNewTask"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="right"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="11dp"
+        android:clickable="true"
+        android:enabled="false"
+        android:foregroundTint="@color/dark_purple"
+        android:visibility="invisible"
+        app:backgroundTint="@color/light_purple"
+        app:maxImageSize="40dp"
+        app:srcCompat="@drawable/tasks" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/selectReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/selectStudy"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="right"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="11dp"
+        android:clickable="true"
+        android:enabled="false"
+        android:foregroundTint="@color/dark_purple"
+        android:visibility="invisible"
+        app:backgroundTint="@color/light_purple"
+        app:maxImageSize="40dp"
+        app:srcCompat="@drawable/reminder" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tdlRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView8"
+        android:layout_marginTop="10dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

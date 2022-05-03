@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_indigo"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MakeNewTask">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/light_purple"
+        android:orientation="vertical"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:text="Title"
+            android:textColor="@color/purple"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/edtTDTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter the title..."
+            android:inputType="textPersonName"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/light_purple"
+        android:orientation="vertical"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:text="Start Time"
+            android:textColor="@color/purple"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/edtStarttime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:enabled="true"
+            android:hint="Enter start time..."
+            android:inputType="textPersonName"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/light_purple"
+        android:orientation="vertical"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:text="Description"
+            android:textColor="@color/purple"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/edtTDDesc"
+            android:layout_width="match_parent"
+            android:layout_height="215dp"
+            android:ems="10"
+            android:gravity="top|left"
+            android:hint="The decription of the task..."
+            android:inputType="textMultiLine"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/light_purple"
+        android:orientation="vertical"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:text="Task Type"
+            android:textColor="@color/purple"
+            android:textSize="24sp" />
+
+        <Spinner
+            android:id="@+id/spinnerTaskType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/dark_indigo"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCreateTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/dark_purple"
+        android:text="Create Task"
+        android:textColor="@color/light_purple"
+        android:textSize="24sp" />
+
+</LinearLayout>
